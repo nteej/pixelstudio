@@ -171,9 +171,7 @@ Partial Class Dashboard
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button299 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button298 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button259 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -1799,9 +1797,7 @@ Partial Class Dashboard
         Me.GroupBox6.Controls.Add(Me.Button1)
         Me.GroupBox6.Controls.Add(Me.Button2)
         Me.GroupBox6.Controls.Add(Me.Button3)
-        Me.GroupBox6.Controls.Add(Me.Button299)
         Me.GroupBox6.Controls.Add(Me.Button4)
-        Me.GroupBox6.Controls.Add(Me.Button298)
         Me.GroupBox6.Controls.Add(Me.Button5)
         Me.GroupBox6.Controls.Add(Me.Button259)
         Me.GroupBox6.Controls.Add(Me.Button6)
@@ -2128,24 +2124,12 @@ Partial Class Dashboard
         Me.Button3.Name = "Button3"
         Me.Button3.UseVisualStyleBackColor = False
         '
-        'Button299
-        '
-        resources.ApplyResources(Me.Button299, "Button299")
-        Me.Button299.Name = "Button299"
-        Me.Button299.UseVisualStyleBackColor = True
-        '
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.Black
         resources.ApplyResources(Me.Button4, "Button4")
         Me.Button4.Name = "Button4"
         Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button298
-        '
-        resources.ApplyResources(Me.Button298, "Button298")
-        Me.Button298.Name = "Button298"
-        Me.Button298.UseVisualStyleBackColor = True
         '
         'Button5
         '
@@ -6201,9 +6185,7 @@ Partial Class Dashboard
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button299 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button298 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button259 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button

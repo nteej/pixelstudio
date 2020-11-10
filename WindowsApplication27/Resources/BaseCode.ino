@@ -15,6 +15,7 @@ int DELAY;
 
 void Lotus_1();
 void Lotus_1();
+void Design_1();
 //method_define
 
 void setup() {
@@ -39,6 +40,8 @@ void loop()
  pt8x25(0, DELAY);
 Lotus_1();
  pt8x25(0, DELAY);
+Design_1();
+ pt8x25(0, DELAY);
 //method_call
    
   }
@@ -51,6 +54,11 @@ void Lotus_1() {
 
 
 void Lotus_1() {
+  cleara8x25();
+}
+
+
+void Design_1() {
   cleara8x25();
 }
 
