@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\core\Documents\ELECTRONICS\Release\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,6 +63,18 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\ShowResultsPane_282.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>662E3C6429B68BF8325862A869A46CDB33910C6D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PixelStudio_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -171,6 +199,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PixelStudio_TemporaryKey.pfx" />
     <None Include="Resources\up.png" />
   </ItemGroup>
   <ItemGroup>
@@ -213,6 +242,58 @@
     <Content Include="Resources\Arrow_down.png" />
     <Content Include="Resources\Close.png" />
     <Content Include="Resources\Files-text.png" />
+    <Content Include="Resources\patterns\Lotus_1.txt" />
+    <Content Include="Resources\patterns\Lotus_10.txt" />
+    <Content Include="Resources\patterns\Lotus_11.txt" />
+    <Content Include="Resources\patterns\Lotus_12.txt" />
+    <Content Include="Resources\patterns\Lotus_2.txt" />
+    <Content Include="Resources\patterns\Lotus_3.txt" />
+    <Content Include="Resources\patterns\Lotus_4.txt" />
+    <Content Include="Resources\patterns\Lotus_5.txt" />
+    <Content Include="Resources\patterns\Lotus_6.txt" />
+    <Content Include="Resources\patterns\Lotus_7.txt" />
+    <Content Include="Resources\patterns\Lotus_8.txt" />
+    <Content Include="Resources\patterns\Lotus_9.txt" />
+    <Content Include="Resources\patterns\Pattern_1.txt" />
+    <Content Include="Resources\patterns\Pattern_2.txt" />
+    <Content Include="Resources\patterns\Pattern_3.txt" />
+    <Content Include="Resources\patterns\Pattern_4.txt" />
+    <Content Include="Resources\patterns\Pattern_5.txt" />
+    <Content Include="Resources\patterns\Pattern_6.txt" />
+    <Content Include="Resources\patterns\Pattern_7.txt" />
+    <Content Include="Resources\patterns\Pattern_8.txt" />
+    <Content Include="Resources\patterns\Spiral_1.txt" />
+    <Content Include="Resources\patterns\Spiral_2.txt" />
+    <Content Include="Resources\patterns\Spiral_3.txt" />
+    <Content Include="Resources\patterns\Spread_1.txt" />
+    <Content Include="Resources\patterns\Spread_10.txt" />
+    <Content Include="Resources\patterns\Spread_11.txt" />
+    <Content Include="Resources\patterns\Spread_12.txt" />
+    <Content Include="Resources\patterns\Spread_13.txt" />
+    <Content Include="Resources\patterns\Spread_14.txt" />
+    <Content Include="Resources\patterns\Spread_2.txt" />
+    <Content Include="Resources\patterns\Spread_3.txt" />
+    <Content Include="Resources\patterns\Spread_4.txt" />
+    <Content Include="Resources\patterns\Spread_5.txt" />
+    <Content Include="Resources\patterns\Spread_6.txt" />
+    <Content Include="Resources\patterns\Spread_7.txt" />
+    <Content Include="Resources\patterns\Spread_8.txt" />
+    <Content Include="Resources\patterns\Spread_9.txt" />
+    <Content Include="Resources\patterns\Wheel_1.txt" />
+    <Content Include="Resources\patterns\Wheel_10.txt" />
+    <Content Include="Resources\patterns\Wheel_11.txt" />
+    <Content Include="Resources\patterns\Wheel_12.txt" />
+    <Content Include="Resources\patterns\Wheel_13.txt" />
+    <Content Include="Resources\patterns\Wheel_14.txt" />
+    <Content Include="Resources\patterns\Wheel_15.txt" />
+    <Content Include="Resources\patterns\Wheel_2.txt" />
+    <Content Include="Resources\patterns\Wheel_3.txt" />
+    <Content Include="Resources\patterns\Wheel_4.txt" />
+    <Content Include="Resources\patterns\Wheel_5.txt" />
+    <Content Include="Resources\patterns\Wheel_6.txt" />
+    <Content Include="Resources\patterns\Wheel_7.txt" />
+    <Content Include="Resources\patterns\Wheel_8.txt" />
+    <Content Include="Resources\patterns\Wheel_9.txt" />
     <Content Include="Resources\Stop.png" />
     <None Include="Resources\BaseCode.ino" />
     <None Include="Resources\arrow_Down_16xLG.png" />
@@ -226,6 +307,23 @@
     <None Include="Resources\right to left.png" />
     <None Include="Resources\left to right1.png" />
     <None Include="Resources\left to right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

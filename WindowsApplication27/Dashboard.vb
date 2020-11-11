@@ -15,7 +15,7 @@ Public Class Dashboard
     Dim pixel7(24) As Color
     Dim pixel8(24) As Color
 
-    Dim patterFilePath = "C:\LED Editor\8x25\examples\"
+    Dim patterFilePath = System.IO.Path.GetFullPath(Application.StartupPath & "\..\..\Resources\patterns\")
     Dim R As Integer
     Dim G As Integer
     Dim B As Integer
@@ -11233,12 +11233,16 @@ Public Class Dashboard
 
     End Sub
 
-    Private Sub ToolStripAdd_Click(sender As Object, e As EventArgs) Handles ToolStripAdd.Click
+    Private Sub setFrames()
         add((frameAnimator.Value) * 200)
         setbtncolor(frameAnimator.Value)
         setbtncolor2(frameAnimator.Value)
         setbtncolor3(frameAnimator.Value)
         setbtncolor4(frameAnimator.Value)
+    End Sub
+
+    Private Sub ToolStripAdd_Click(sender As Object, e As EventArgs) Handles ToolStripAdd.Click
+        setFrames()
     End Sub
 
     Private Sub ToolStripGenerate_Click(sender As Object, e As EventArgs) Handles ToolStripGenerate.Click
@@ -12226,35 +12230,34 @@ Public Class Dashboard
     End Sub
 
     Private Sub LotusToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LotusToolStripMenuItem.Click
-        loadPatterns(patterFilePath + "Pattern_1.txt")
+        loadPatterns(patterFilePath + "Lotus_6.txt")
     End Sub
 
     Private Sub FlagToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FlagToolStripMenuItem.Click
-        loadPatterns(patterFilePath + "Pattern_2.txt")
+        loadPatterns(patterFilePath + "Lotus_7.txt")
     End Sub
 
     Private Sub CycloneToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CycloneToolStripMenuItem.Click
-        loadPatterns(patterFilePath + "Pattern_3.txt")
+        loadPatterns(patterFilePath + "Lotus_8.txt")
     End Sub
 
     Private Sub Pattern01ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Pattern01ToolStripMenuItem.Click
-        loadPatterns(patterFilePath + "Pattern_4.txt")
+        loadPatterns(patterFilePath + "Lotus_9.txt")
     End Sub
 
     Private Sub Pattern02ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Pattern02ToolStripMenuItem.Click
-        loadPatterns(patterFilePath + "Pattern_5.txt")
+        loadPatterns(patterFilePath + "Lotus_10.txt")
     End Sub
 
-    Private Sub Pattern03ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Pattern03ToolStripMenuItem.Click
-        loadPatterns(patterFilePath + "Pattern_6.txt")
+    Private Sub Pattern03ToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
     End Sub
 
-    Private Sub Pattern04ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Pattern04ToolStripMenuItem.Click
-        loadPatterns(patterFilePath + "Pattern_7.txt")
+    Private Sub Pattern04ToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
     End Sub
 
-    Private Sub Pattern05ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Pattern05ToolStripMenuItem.Click
-        loadPatterns(patterFilePath + "Pattern_8.txt")
+    Private Sub Pattern05ToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -12667,9 +12670,27 @@ Public Class Dashboard
 
     End Sub
 
+
+    Sub setFrameAnimator(run As Boolean)
+        If (run) Then
+            Dim i, j As Integer
+            j = frameAnimator.Maximum
+            For i = 0 To frameAnimator.Maximum
+                frameAnimator.Value = i
+                j = j - 1
+                If (j = 1) Then
+                    j = frameAnimator.Maximum
+                End If
+            Next
+        End If
+       
+
+    End Sub
+
     Private Sub ButtonStart_Click(sender As Object, e As EventArgs) Handles ButtonStart.Click
         x = 0
         Timer1.Start()
+        setFrameAnimator(True)
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -13129,4 +13150,94 @@ Public Class Dashboard
     Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
 
     End Sub
+
+    Private Sub SamplesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SamplesToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub AdvancedHazitechToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdvancedHazitechToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub Chakra1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Chakra1ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Lotus_1.txt")
+    End Sub
+
+    Private Sub Chakra2ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Chakra2ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Lotus_2.txt")
+    End Sub
+
+    Private Sub Chakra3ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Chakra3ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Lotus_3.txt")
+    End Sub
+
+    Private Sub Chakra4ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Chakra4ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Lotus_4.txt")
+    End Sub
+
+    Private Sub Chakra5ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Chakra5ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Lotus_5.txt")
+    End Sub
+
+    Private Sub Wheel1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Wheel1ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Wheel_1.txt")
+    End Sub
+
+    Private Sub Wheel2ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Wheel2ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Wheel_2.txt")
+    End Sub
+
+    Private Sub Wheel3ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Wheel3ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Wheel_3.txt")
+    End Sub
+
+    Private Sub Wheel4ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Wheel4ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Wheel_4.txt")
+    End Sub
+
+    Private Sub Wheel5ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Wheel5ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Wheel_5.txt")
+    End Sub
+
+    Private Sub Flag1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Flag1ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Pattern_1.txt")
+    End Sub
+
+    Private Sub Flag2ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Flag2ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Pattern_2.txt")
+    End Sub
+
+    Private Sub Flag3ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Flag3ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Pattern_3.txt")
+    End Sub
+
+    Private Sub Flag4ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Flag4ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Pattern_4.txt")
+    End Sub
+
+    Private Sub Flag5ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Flag5ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Pattern_5.txt")
+    End Sub
+
+    Private Sub Spread1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Spread1ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Spread_1.txt")
+    End Sub
+
+    Private Sub Spread2ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Spread2ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Spread_2.txt")
+    End Sub
+
+    Private Sub Spread3ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Spread3ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Spread_3.txt")
+    End Sub
+
+    Private Sub Spread4ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Spread4ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Spread_4.txt")
+    End Sub
+
+    Private Sub Spread5ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Spread5ToolStripMenuItem.Click
+        loadPatterns(patterFilePath + "Spread_5.txt")
+    End Sub
+
+   
 End Class

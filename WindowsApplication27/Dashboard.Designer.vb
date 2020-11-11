@@ -52,11 +52,6 @@ Partial Class Dashboard
         Me.CycloneToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Pattern01ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Pattern02ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Pattern03ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Pattern04ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Pattern05ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Pattern06ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Pattern07ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdvancedHazitechToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DocumentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -140,7 +135,6 @@ Partial Class Dashboard
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripComboBox1 = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripStart = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripGenerate = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripSplitButton()
         Me.LeftToolStripButton5 = New System.Windows.Forms.ToolStripButton()
@@ -683,6 +677,29 @@ Partial Class Dashboard
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.projectFile = New System.Windows.Forms.TextBox()
         Me.projectExplorer = New System.Windows.Forms.ListBox()
+        Me.WheelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DhaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SpreadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Chakra1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Chakra2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Wheel1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Wheel2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Wheel3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Flag1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Flag2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Flag3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Spread1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Spread2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Spread3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Chakra3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Chakra4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Chakra5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Wheel4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Wheel5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Flag4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Flag5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Spread4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Spread5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -1014,13 +1031,13 @@ Partial Class Dashboard
         '
         'CodeToolStripMenuItem
         '
-        Me.CodeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SamplesToolStripMenuItem, Me.AdvancedHazitechToolStripMenuItem})
+        Me.CodeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SamplesToolStripMenuItem, Me.AdvancedHazitechToolStripMenuItem, Me.WheelToolStripMenuItem, Me.DhaToolStripMenuItem, Me.SpreadToolStripMenuItem})
         Me.CodeToolStripMenuItem.Name = "CodeToolStripMenuItem"
         resources.ApplyResources(Me.CodeToolStripMenuItem, "CodeToolStripMenuItem")
         '
         'SamplesToolStripMenuItem
         '
-        Me.SamplesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LotusToolStripMenuItem, Me.FlagToolStripMenuItem, Me.CycloneToolStripMenuItem, Me.Pattern01ToolStripMenuItem, Me.Pattern02ToolStripMenuItem, Me.Pattern03ToolStripMenuItem, Me.Pattern04ToolStripMenuItem, Me.Pattern05ToolStripMenuItem, Me.Pattern06ToolStripMenuItem, Me.Pattern07ToolStripMenuItem})
+        Me.SamplesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LotusToolStripMenuItem, Me.FlagToolStripMenuItem, Me.CycloneToolStripMenuItem, Me.Pattern01ToolStripMenuItem, Me.Pattern02ToolStripMenuItem})
         Me.SamplesToolStripMenuItem.Name = "SamplesToolStripMenuItem"
         resources.ApplyResources(Me.SamplesToolStripMenuItem, "SamplesToolStripMenuItem")
         '
@@ -1049,33 +1066,9 @@ Partial Class Dashboard
         Me.Pattern02ToolStripMenuItem.Name = "Pattern02ToolStripMenuItem"
         resources.ApplyResources(Me.Pattern02ToolStripMenuItem, "Pattern02ToolStripMenuItem")
         '
-        'Pattern03ToolStripMenuItem
-        '
-        Me.Pattern03ToolStripMenuItem.Name = "Pattern03ToolStripMenuItem"
-        resources.ApplyResources(Me.Pattern03ToolStripMenuItem, "Pattern03ToolStripMenuItem")
-        '
-        'Pattern04ToolStripMenuItem
-        '
-        Me.Pattern04ToolStripMenuItem.Name = "Pattern04ToolStripMenuItem"
-        resources.ApplyResources(Me.Pattern04ToolStripMenuItem, "Pattern04ToolStripMenuItem")
-        '
-        'Pattern05ToolStripMenuItem
-        '
-        Me.Pattern05ToolStripMenuItem.Name = "Pattern05ToolStripMenuItem"
-        resources.ApplyResources(Me.Pattern05ToolStripMenuItem, "Pattern05ToolStripMenuItem")
-        '
-        'Pattern06ToolStripMenuItem
-        '
-        Me.Pattern06ToolStripMenuItem.Name = "Pattern06ToolStripMenuItem"
-        resources.ApplyResources(Me.Pattern06ToolStripMenuItem, "Pattern06ToolStripMenuItem")
-        '
-        'Pattern07ToolStripMenuItem
-        '
-        Me.Pattern07ToolStripMenuItem.Name = "Pattern07ToolStripMenuItem"
-        resources.ApplyResources(Me.Pattern07ToolStripMenuItem, "Pattern07ToolStripMenuItem")
-        '
         'AdvancedHazitechToolStripMenuItem
         '
+        Me.AdvancedHazitechToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Chakra1ToolStripMenuItem, Me.Chakra2ToolStripMenuItem, Me.Chakra3ToolStripMenuItem, Me.Chakra4ToolStripMenuItem, Me.Chakra5ToolStripMenuItem})
         Me.AdvancedHazitechToolStripMenuItem.Name = "AdvancedHazitechToolStripMenuItem"
         resources.ApplyResources(Me.AdvancedHazitechToolStripMenuItem, "AdvancedHazitechToolStripMenuItem")
         '
@@ -1522,7 +1515,7 @@ Partial Class Dashboard
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.PrintToolStripButton, Me.CutToolStripButton, Me.CopyToolStripButton, Me.PasteToolStripButton, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripSeparator3, Me.ToolStripLabel1, Me.ToolStripProgressBar1, Me.ToolStripAdd, Me.ToolStripSeparator4, Me.ToolStripComboBox1, Me.ToolStripSeparator5, Me.ToolStripStart, Me.ToolStripGenerate, Me.ToolStripSplitButton1, Me.LeftToolStripButton5, Me.ToolStripButtonLeft, Me.RightToolStripButton6, Me.ToolStripButtonRight, Me.UpToolStripButton7, Me.ToolStripButtonUp, Me.DownToolStripButton8, Me.ToolStripButtonDown, Me.toolStripSeparator, Me.toolStripSeparator6, Me.HelpToolStripButton})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.NewToolStripButton, Me.OpenToolStripButton, Me.SaveToolStripButton, Me.PrintToolStripButton, Me.CutToolStripButton, Me.CopyToolStripButton, Me.PasteToolStripButton, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripSeparator3, Me.ToolStripLabel1, Me.ToolStripProgressBar1, Me.ToolStripAdd, Me.ToolStripSeparator4, Me.ToolStripComboBox1, Me.ToolStripSeparator5, Me.ToolStripGenerate, Me.ToolStripSplitButton1, Me.LeftToolStripButton5, Me.ToolStripButtonLeft, Me.RightToolStripButton6, Me.ToolStripButtonRight, Me.UpToolStripButton7, Me.ToolStripButtonUp, Me.DownToolStripButton8, Me.ToolStripButtonDown, Me.toolStripSeparator, Me.toolStripSeparator6, Me.HelpToolStripButton})
         resources.ApplyResources(Me.ToolStrip1, "ToolStrip1")
         Me.ToolStrip1.Name = "ToolStrip1"
         '
@@ -1628,12 +1621,6 @@ Partial Class Dashboard
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
         resources.ApplyResources(Me.ToolStripSeparator5, "ToolStripSeparator5")
-        '
-        'ToolStripStart
-        '
-        Me.ToolStripStart.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        resources.ApplyResources(Me.ToolStripStart, "ToolStripStart")
-        Me.ToolStripStart.Name = "ToolStripStart"
         '
         'ToolStripGenerate
         '
@@ -5794,6 +5781,124 @@ Partial Class Dashboard
         resources.ApplyResources(Me.projectExplorer, "projectExplorer")
         Me.projectExplorer.Name = "projectExplorer"
         '
+        'WheelToolStripMenuItem
+        '
+        Me.WheelToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Wheel1ToolStripMenuItem, Me.Wheel2ToolStripMenuItem, Me.Wheel3ToolStripMenuItem, Me.Wheel4ToolStripMenuItem, Me.Wheel5ToolStripMenuItem})
+        Me.WheelToolStripMenuItem.Name = "WheelToolStripMenuItem"
+        resources.ApplyResources(Me.WheelToolStripMenuItem, "WheelToolStripMenuItem")
+        '
+        'DhaToolStripMenuItem
+        '
+        Me.DhaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Flag1ToolStripMenuItem, Me.Flag2ToolStripMenuItem, Me.Flag3ToolStripMenuItem, Me.Flag4ToolStripMenuItem, Me.Flag5ToolStripMenuItem})
+        Me.DhaToolStripMenuItem.Name = "DhaToolStripMenuItem"
+        resources.ApplyResources(Me.DhaToolStripMenuItem, "DhaToolStripMenuItem")
+        '
+        'SpreadToolStripMenuItem
+        '
+        Me.SpreadToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Spread1ToolStripMenuItem, Me.Spread2ToolStripMenuItem, Me.Spread3ToolStripMenuItem, Me.Spread4ToolStripMenuItem, Me.Spread5ToolStripMenuItem})
+        Me.SpreadToolStripMenuItem.Name = "SpreadToolStripMenuItem"
+        resources.ApplyResources(Me.SpreadToolStripMenuItem, "SpreadToolStripMenuItem")
+        '
+        'Chakra1ToolStripMenuItem
+        '
+        Me.Chakra1ToolStripMenuItem.Name = "Chakra1ToolStripMenuItem"
+        resources.ApplyResources(Me.Chakra1ToolStripMenuItem, "Chakra1ToolStripMenuItem")
+        '
+        'Chakra2ToolStripMenuItem
+        '
+        Me.Chakra2ToolStripMenuItem.Name = "Chakra2ToolStripMenuItem"
+        resources.ApplyResources(Me.Chakra2ToolStripMenuItem, "Chakra2ToolStripMenuItem")
+        '
+        'Wheel1ToolStripMenuItem
+        '
+        Me.Wheel1ToolStripMenuItem.Name = "Wheel1ToolStripMenuItem"
+        resources.ApplyResources(Me.Wheel1ToolStripMenuItem, "Wheel1ToolStripMenuItem")
+        '
+        'Wheel2ToolStripMenuItem
+        '
+        Me.Wheel2ToolStripMenuItem.Name = "Wheel2ToolStripMenuItem"
+        resources.ApplyResources(Me.Wheel2ToolStripMenuItem, "Wheel2ToolStripMenuItem")
+        '
+        'Wheel3ToolStripMenuItem
+        '
+        Me.Wheel3ToolStripMenuItem.Name = "Wheel3ToolStripMenuItem"
+        resources.ApplyResources(Me.Wheel3ToolStripMenuItem, "Wheel3ToolStripMenuItem")
+        '
+        'Flag1ToolStripMenuItem
+        '
+        Me.Flag1ToolStripMenuItem.Name = "Flag1ToolStripMenuItem"
+        resources.ApplyResources(Me.Flag1ToolStripMenuItem, "Flag1ToolStripMenuItem")
+        '
+        'Flag2ToolStripMenuItem
+        '
+        Me.Flag2ToolStripMenuItem.Name = "Flag2ToolStripMenuItem"
+        resources.ApplyResources(Me.Flag2ToolStripMenuItem, "Flag2ToolStripMenuItem")
+        '
+        'Flag3ToolStripMenuItem
+        '
+        Me.Flag3ToolStripMenuItem.Name = "Flag3ToolStripMenuItem"
+        resources.ApplyResources(Me.Flag3ToolStripMenuItem, "Flag3ToolStripMenuItem")
+        '
+        'Spread1ToolStripMenuItem
+        '
+        Me.Spread1ToolStripMenuItem.Name = "Spread1ToolStripMenuItem"
+        resources.ApplyResources(Me.Spread1ToolStripMenuItem, "Spread1ToolStripMenuItem")
+        '
+        'Spread2ToolStripMenuItem
+        '
+        Me.Spread2ToolStripMenuItem.Name = "Spread2ToolStripMenuItem"
+        resources.ApplyResources(Me.Spread2ToolStripMenuItem, "Spread2ToolStripMenuItem")
+        '
+        'Spread3ToolStripMenuItem
+        '
+        Me.Spread3ToolStripMenuItem.Name = "Spread3ToolStripMenuItem"
+        resources.ApplyResources(Me.Spread3ToolStripMenuItem, "Spread3ToolStripMenuItem")
+        '
+        'Chakra3ToolStripMenuItem
+        '
+        Me.Chakra3ToolStripMenuItem.Name = "Chakra3ToolStripMenuItem"
+        resources.ApplyResources(Me.Chakra3ToolStripMenuItem, "Chakra3ToolStripMenuItem")
+        '
+        'Chakra4ToolStripMenuItem
+        '
+        Me.Chakra4ToolStripMenuItem.Name = "Chakra4ToolStripMenuItem"
+        resources.ApplyResources(Me.Chakra4ToolStripMenuItem, "Chakra4ToolStripMenuItem")
+        '
+        'Chakra5ToolStripMenuItem
+        '
+        Me.Chakra5ToolStripMenuItem.Name = "Chakra5ToolStripMenuItem"
+        resources.ApplyResources(Me.Chakra5ToolStripMenuItem, "Chakra5ToolStripMenuItem")
+        '
+        'Wheel4ToolStripMenuItem
+        '
+        Me.Wheel4ToolStripMenuItem.Name = "Wheel4ToolStripMenuItem"
+        resources.ApplyResources(Me.Wheel4ToolStripMenuItem, "Wheel4ToolStripMenuItem")
+        '
+        'Wheel5ToolStripMenuItem
+        '
+        Me.Wheel5ToolStripMenuItem.Name = "Wheel5ToolStripMenuItem"
+        resources.ApplyResources(Me.Wheel5ToolStripMenuItem, "Wheel5ToolStripMenuItem")
+        '
+        'Flag4ToolStripMenuItem
+        '
+        Me.Flag4ToolStripMenuItem.Name = "Flag4ToolStripMenuItem"
+        resources.ApplyResources(Me.Flag4ToolStripMenuItem, "Flag4ToolStripMenuItem")
+        '
+        'Flag5ToolStripMenuItem
+        '
+        Me.Flag5ToolStripMenuItem.Name = "Flag5ToolStripMenuItem"
+        resources.ApplyResources(Me.Flag5ToolStripMenuItem, "Flag5ToolStripMenuItem")
+        '
+        'Spread4ToolStripMenuItem
+        '
+        Me.Spread4ToolStripMenuItem.Name = "Spread4ToolStripMenuItem"
+        resources.ApplyResources(Me.Spread4ToolStripMenuItem, "Spread4ToolStripMenuItem")
+        '
+        'Spread5ToolStripMenuItem
+        '
+        Me.Spread5ToolStripMenuItem.Name = "Spread5ToolStripMenuItem"
+        resources.ApplyResources(Me.Spread5ToolStripMenuItem, "Spread5ToolStripMenuItem")
+        '
         'Dashboard
         '
         resources.ApplyResources(Me, "$this")
@@ -6136,7 +6241,6 @@ Partial Class Dashboard
     Friend WithEvents ToolStripSeparator4 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripComboBox1 As System.Windows.Forms.ToolStripComboBox
     Friend WithEvents ToolStripSeparator5 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripStart As System.Windows.Forms.ToolStripButton
     Friend WithEvents TeamToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripGenerate As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripSplitButton1 As System.Windows.Forms.ToolStripSplitButton
@@ -6168,11 +6272,6 @@ Partial Class Dashboard
     Friend WithEvents Button279 As System.Windows.Forms.Button
     Friend WithEvents Pattern01ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Pattern02ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Pattern03ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Pattern04ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Pattern05ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Pattern06ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Pattern07ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents frameAnimator As System.Windows.Forms.TrackBar
     Friend WithEvents Label41 As System.Windows.Forms.Label
     Friend WithEvents frameCount As System.Windows.Forms.NumericUpDown
@@ -6698,5 +6797,28 @@ Partial Class Dashboard
     Friend WithEvents Label34 As System.Windows.Forms.Label
     Friend WithEvents projectFile As System.Windows.Forms.TextBox
     Friend WithEvents projectExplorer As System.Windows.Forms.ListBox
+    Friend WithEvents Chakra1ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Chakra2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents WheelToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Wheel1ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Wheel2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Wheel3ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DhaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Flag1ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Flag2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Flag3ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents SpreadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Spread1ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Spread2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Spread3ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Chakra3ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Chakra4ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Chakra5ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Wheel4ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Wheel5ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Flag4ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Flag5ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Spread4ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Spread5ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
